@@ -1,0 +1,55 @@
+body > div.popwrap {
+	position: absolute;
+	padding: 10px;
+}
+.bottom-right {
+	bottom: 0;
+	right: 0;
+}
+.bottom-left {
+	bottom: 0;
+	left: 0;
+}
+.top-left {
+	top: 0;
+	left: 0;
+}
+.top-right {
+	top: 0;
+	right: 0;
+}
+.center-left {
+	left: 0;
+	top: 40%;
+}
+.center-right {
+	right: 0;
+	top: 40%;
+}
+.center {
+	left: 40%;
+	top: 40%;
+}
+.popup {
+	width: 200px;
+	min-height: 50px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	background-color: #242321;
+	padding: 3px 5px 10px 10px;
+	display: block;
+	margin-bottom: 5px;
+}
+.close {
+	float: right;
+	cursor: pointer;
+	color: #EFEFEF;
+	font: bold 12px Tahoma, Arial, Helvetica, sans-serif;
+}
+.poptext {
+	clear: both;
+	font: 12px Lucida Grande,Lucida Sans Unicode,Geneva,Verdana,sans-serif;
+	word-wrap: break-word;
+	color: #FEFEFE;
+	line-height: 120%;
+}
