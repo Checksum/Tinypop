@@ -1,21 +1,24 @@
-#### TINYPOP - Lightweight growl like notifications in JavaScript
+### TINYPOP - Lightweight growl like notifications in JavaScript
 
 Tinypop is a lightweight JS library to display growl like notifications. It weights under 2KB (JS+CSS) when compressed with YUI Compressor. You can see a demo [here](http://iambot.net/demo/tinypop/)
 
-###### Installation
+#### Installation
 
 1) Include the JS and CSS in the head section of your html
+
 ```html
 <script src="tinypop.js"></script>
 <link rel="stylesheet" href="tinypop.css">
 ```
 
 2) Create an instance of the popup by passing the message and options
+
 ```javascript
 var popup = new TINYPOP("this is a new popup", {position:'center',sticky:true});
 ```
 
 3) You can change the message and close the popup by reusing the instance
+
 ```javascript
 popup.show("New message");
 popup.hide();
