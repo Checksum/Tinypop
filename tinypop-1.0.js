@@ -67,12 +67,11 @@
 	}
 	
 	// Our main object
-	var TINYPOP = function(msg, opts) {
+	var TINYPOP = function(opts) 
+	{
 		var wrapper, 
 				that = this;
-		
-		// Replace all " with \"
-		msg = msg ? msg.replace('"','\"') : ' ';
+	
 		this.o = opts || {};
 		
 		// Override default options
@@ -92,7 +91,7 @@
 		// Now create our popup div if it doesn't exist
 		this.popup = document.createElement("div");
 		this.popup.innerHTML = "<span class='close' id='close"+count+"'>&times;</span>";
-		this.popup.innerHTML += "<div class='poptext'>"+msg+"</div>";
+		this.popup.innerHTML += "<div class='poptext'></div>";
 		this.popup.className = "popup";
 		this.popup.id = "popup"+count;
 		// This is the important property to "animate"
@@ -108,15 +107,14 @@
 		}
 		// Now increment our popup count
 		count = count + 1;
-		
-		// Animate and show our popup
-		fadein.apply(that);
 	};
 	
 	// Expose these methods to our instance
 	TINYPOP.prototype = {
 		// Show a different message in the popup
 		show: function(msg) {
+			// Replace all " with \"
+			msg = msg ? msg.replace('"','\"') : ' ';
 			this.popup.children[1].innerHTML = msg;
 			fadein.apply(this);
 		},
