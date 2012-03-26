@@ -11,10 +11,10 @@ Tinypop is a lightweight JS library to display growl like notifications. It weig
 <link rel="stylesheet" href="tinypop.css">
 ```
 
-2) Create an instance of the popup by passing the message and options
+2) Create an instance of the popup by passing the options
 
 ```javascript
-var popup = new TINYPOP("this is a new popup", {position:'center',sticky:true});
+var popup = new TINYPOP({position:'center',sticky:true});
 ```
 
 3) You can change the message and close the popup by reusing the instance
